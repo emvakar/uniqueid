@@ -41,7 +41,7 @@ extension UniqueID {
   ///                 between groups. The default is `true`.
   ///
   public func serialized(
-    lowercase: Bool = false, separators: Bool = true
+    lowercase: Bool = true, separators: Bool = true
   ) -> String {
     let length = 32 + (separators ? 4 : 0)
     if #available(macOS 11.0, iOS 14.0, watchOS 7.0, tvOS 14.0, *) {
